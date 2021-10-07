@@ -59,13 +59,14 @@ header a{
     width: 100%;
     padding: 10px 100px;
 }
-.rightDiv form input[type="text"]{
+.rightDiv form input[type="text"],.rightDiv select, .rightDiv form input[type="file"]{
     width: 100%;
     padding: 15px 10px;
     outline: none;
     border: 1px solid #111;
     margin: 10px 0;
 }
+
 .rightDiv form input[type="submit"]{
     width: 100%;
     padding: 15px 10px;
