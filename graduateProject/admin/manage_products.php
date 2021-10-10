@@ -92,10 +92,14 @@ if (isset($_POST['submit'])) {
         <select name="cat_id">
             <?php
                 $cat = mysqli_query($conn,"select * from categories");
-                while($get = mysqli_fetch_assoc($cat)){
-                    echo "
-                    <option value=".$get['id'].">".$get['catname']."</option>
-                    ";
+                while($get=mysqli_fetch_assoc($cat)){
+                    if($get['id']==$cat_id){
+                        echo "
+                        <option selected value=".$get['id'].">".$get['catname']."</option>
+                        ";
+                    }else{
+                        echo "<option value=".$get['id'].">".$get['catname']."</option>";
+                    }
                 }
             ?>
         </select>

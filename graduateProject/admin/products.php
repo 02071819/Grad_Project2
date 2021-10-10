@@ -3,6 +3,22 @@ include("top.inc.php");
 include("left.inc.php");
 include("footer.inc.php");
 
+if(isset($_GET['type']) && $_GET['type']!=''){
+    $type = mysqli_real_escape_string($conn,$_GET['type']);
+    if($type == 'status'){
+        $opt = mysqli_real_escape_string($conn,$_GET['operation']);
+        $s_id = mysqli_real_escape_string($conn,$_GET['s_id']);
+        if($opt=='active'){
+            $status = '1';
+        }else{
+            $status = '0';
+        }
+        $update = mysqli_query($conn,"UPDATE `products` SET `status`='$status' WHERE id='$s_id'");
+    }
+}
+
+
+
 //針對該id做delete動作
 if(isset($_GET['id']) && $_GET['id']!='') {
     $id = mysqli_real_escape_string($conn,$_GET['id']);
@@ -37,7 +53,15 @@ if(isset($_GET['id']) && $_GET['id']!='') {
                                 &nbsp;
                             <a href='manage_products.php?id=".$data['id']."'>Edit</a>
                         </td>
-                        <td>".$data['status']."</td>
+
+                        <td>"; ?>
+                        <?php
+                            if($data['status']==1){
+                               echo"<a href='?type=status&operation=deactive&s_id=".$data['id']."'>Active</a>"; 
+                            }else{
+                                echo"<a href='?type=status&operation=active&s_id=".$data['id']."'>Deactive</a>"; 
+                            }                          
+                        echo "</td>
                     </tr>
                     ";
                 }
