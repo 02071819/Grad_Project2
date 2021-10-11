@@ -1,16 +1,23 @@
 <?php
-function get_product($conn,$type='',$limit=''){
-    $sql = "select * from products";
-    if($type=='latest'){
-        $sql.=" order by id desc";
+function get_product($conn, $limit = '', $cat_id = '', $pro_id = '')
+{
+    $sql = "select * from products where status=1 ";
+    
+    if ($cat_id != '') {
+        $sql .= " and cat_id=$cat_id";
     }
-    if($limit!=''){
-        $sql.=" limit $limit";
+    if ($pro_id != '') {
+        $sql .= " and id=$pro_id";
     }
-    $res = mysqli_query($conn,$sql);
-    $data=array();
-    while($row = mysqli_fetch_assoc($res)){
-        $data[]=$row;
+    $sql .= " order by id desc";
+    
+    if ($limit != '') {
+        $sql .= " limit $limit";
+    }
+    $res = mysqli_query($conn, $sql);
+    $data = array();
+    while ($row = mysqli_fetch_assoc($res)) {
+        $data[] = $row;
     }
     return $data;
 }

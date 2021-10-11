@@ -1,3 +1,4 @@
+<!-- index.php的上半部 -->
 <?php
 include "connection.inc.php";
 $query = mysqli_query($conn,"select * from categories");
@@ -46,13 +47,13 @@ $query = mysqli_query($conn,"select * from categories");
     </div>
 
     <nav>
-        <a href="#" class="logo">WINHORN</a>
+        <a href="index.php" class="logo">WINHORN</a>
         <ul class="nav-wrap">
-            <li><a href="#">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <?php
                 while($data = mysqli_fetch_assoc($query)){
                     echo " 
-                    <li><a href='".$data['id']."'>".$data['catname']."</a></li>
+                    <li><a href='categories.php?cat_id=".$data['id']."'>".$data['catname']."</a></li>
                     ";
                 }
             ?>
