@@ -2,7 +2,6 @@
 <?php
 include "top.inc.php";
 $pro_id = mysqli_real_escape_string($conn, $_GET['id']);
-include "footer.inc.php";
 include "function.inc.php";
 ?>
 <section class="singlePro">
@@ -19,11 +18,15 @@ include "function.inc.php";
             <div class="singlecol">
                 <h2><?php echo $list['pname'] ?></h2>
                 <label class="sprice">$ <?php echo $list['sprice'] ?></label> &nbsp; &nbsp; <label class="mrp"><del>$ <?php echo $list['mrp'] ?></del></label>
-                <br><input type="number" name="qty" value="1">
-                <p><?php echo $list['short_desc'] ?></p>
+                <br>
+                <form method="post" action="add_cart.php" >
+                    <input type="number" name="qty" value="1">
+                    <p><?php echo $list['short_desc'] ?></p>
+                    <p><?php echo $list['long_desc'] ?></p>
 
-                <p><?php echo $list['long_desc'] ?></p>
-                <input type="submit" name="add_cart" value="Add Cart" class="cartBtn">
+                    <input type="hidden" name="pid" value="<?php echo $list['id'] ?>">
+                    <input type="submit" name="cart" value="Add Cart" class="cartBtn">
+                </form>
             </div>
         <?php } ?>
     </div>
@@ -34,8 +37,8 @@ include "function.inc.php";
     <div class="titleText">
         <h1>Related Products</h1>
     </div>
-    <div class="row">
-        <div class="col">
+    <div class="Indexrow">
+        <div class="Indexcol">
             <div class="imgBx">
                 <img src="images/shoes_2.jpg">
             </div>
@@ -45,7 +48,7 @@ include "function.inc.php";
                 <input type="submit" name="cart" value="Add Cart" class="cartBtn">
             </div>
         </div>
-        <div class="col">
+        <div class="Indexcol">
             <div class="imgBx">
                 <img src="images/shoes_2.jpg">
             </div>
@@ -55,7 +58,7 @@ include "function.inc.php";
                 <input type="submit" name="cart" value="Add Cart" class="cartBtn">
             </div>
         </div>
-        <div class="col">
+        <div class="Indexcol">
             <div class="imgBx">
                 <img src="images/shoes_2.jpg">
             </div>
@@ -65,7 +68,7 @@ include "function.inc.php";
                 <input type="submit" name="cart" value="Add Cart" class="cartBtn">
             </div>
         </div>
-        <div class="col">
+        <div class="Indexcol">
             <div class="imgBx">
                 <img src="images/shoes_2.jpg">
             </div>
@@ -84,3 +87,6 @@ include "function.inc.php";
 </body>
 
 </html>
+<?php
+include "footer.inc.php";
+?>

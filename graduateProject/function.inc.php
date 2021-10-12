@@ -21,5 +21,19 @@ function get_product($conn, $limit = '', $cat_id = '', $pro_id = '')
     }
     return $data;
 }
+// select products DB的所有資料
+
+
+function getIP()
+{
+    $ip = $_SERVER['REMOTE_ADDR'];
+
+    if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+        $ip = $_SERVER['HTTP_CLIENT_IP'];
+    } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+        $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+    }
+    return $ip;
+}
+
 ?>
-<!-- select products DB的所有資料 -->

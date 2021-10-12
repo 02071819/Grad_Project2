@@ -10,8 +10,9 @@ $query = mysqli_query($conn,"select * from categories");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce Website</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
     <!-----------------------Header Part------------------------->
@@ -68,7 +69,7 @@ $query = mysqli_query($conn,"select * from categories");
         <div class="right-items">
             <a href="javascript:void(0)" onclick="lForm()">Login</a>
             <a href="javascript:void(0)" onclick="rForm()">Sign Up</a>
-            <a href="#"><i class="fas fa-shopping-cart"></i><sup>0</sup></a>
+            <a href="cart-page.php"><i class="fas fa-shopping-cart"></i><sup>0</sup></a>
         </div>
     </nav>
 

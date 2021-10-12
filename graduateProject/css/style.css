@@ -201,14 +201,14 @@ nav{
     0%{width: 0%}
     100%{width: 80%;}
 }
-.row{
+.Indexrow{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-.row .col{
+.Indexrow .Indexcol{
     width: 300px;
     margin: 30px 10px;
     box-shadow: 0px 1px 5px rgba(0 0 0 / 70%);
@@ -219,7 +219,7 @@ nav{
     padding: 30px;
     border-radius: 10px;
 }
-.row .col .imgBx{
+.Indexrow .Indexcol .imgBx{
    margin-right: 165px;
 }
 .details{
@@ -314,7 +314,7 @@ input[type="number"]{
     max-width: 500px;
     width: 100%;
     background: #fff;
-    height: 400px;
+    height: 430px;
 }
 .box form{
     width: 100%;
@@ -424,3 +424,15 @@ th:last-child{
     margin-top: 20px;
     cursor: pointer;
 }
+
+/* footer */
+/* .btn-primary {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: transparent; 
+}
+.btn-primary:hover {
+    color: rgb(255, 255, 255);
+    background-color: #509410;
+    border-color: #89fa20;
+} */

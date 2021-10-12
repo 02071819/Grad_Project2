@@ -22,7 +22,11 @@ if(isset($_GET['type']) && $_GET['type']!=''){
 //針對該id做delete動作
 if(isset($_GET['id']) && $_GET['id']!='') {
     $id = mysqli_real_escape_string($conn,$_GET['id']);
+    $img = mysqli_query($conn,"select * from products where id = '$id'");
+    $result = mysqli_fetch_assoc($img);
+    unlink("images/".$result['pimage']);
     $delete = mysqli_query($conn, "DELETE FROM `products` WHERE id = '$id'");
+    header("location:products.php");
 }
 ?>
 

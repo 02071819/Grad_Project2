@@ -1,21 +1,20 @@
 <?php
 include "connection.inc.php";
 include "top.inc.php";
-include "footer.inc.php";
 include "function.inc.php";
 ?>
 
 <!-----------------------Products Part------------------------->
-    <section class="newProducts">
+<section class="newProducts">
         <div class="titleText">
             <h1>New Arrivals Products</h1>
         </div>
-        <div class="row">
+        <div class="Indexrow">
             <?php
             $get_product = get_product($conn,6);
             foreach($get_product as $list){ ?>
             
-            <div class="col">
+            <div class="Indexcol">
                 <div class="imgBx">
                     <img src="images/<?php echo $list['pimage'] ?>">
                 </div>
@@ -27,7 +26,7 @@ include "function.inc.php";
             </div>
             <?php } ?>
 
-            <!-- <div class="col">
+        <!-- <div class="col">
                 <div class="imgBx">
                     <img src="images/shoes_2.jpg">
                 </div>
@@ -77,5 +76,9 @@ include "function.inc.php";
                     <input type="submit" name="cart" value="Add Cart" class="cartBtn">
                 </div>
             </div> -->
-        </div>
-    </section>
+    </div>
+</section>
+
+<?php
+include "footer.inc.php";
+?>
