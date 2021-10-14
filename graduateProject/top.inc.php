@@ -1,7 +1,12 @@
 <!-- index.php的上半部 -->
 <?php
 include "connection.inc.php";
+include "function.inc.php";
 $query = mysqli_query($conn,"select * from categories");
+
+$ip = getIP();
+$cart = mysqli_query($conn,"select * from guest_cart where ip_address = '$ip'");
+$num = mysqli_num_rows($cart);
 ?>
 
 <!DOCTYPE html>
@@ -59,17 +64,21 @@ $query = mysqli_query($conn,"select * from categories");
                 }
             ?>
         </ul>
-        <div class="search-form">
+        <!-- Search part -->
+        <!-- <div class="search-form">
             <form>
-                <input type="text" name="search-text" class="input-data" placeholder="Search">
-                <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+                <input type="text" name="search-text" class="inputData" placeholder="Search">
+                <button type="submit" class="search-botton"><i class="fas fa-search"></i></button>
             </form>
         </div>
-        <div class="search-icon" onclick="search()"><i class="fas fa-search"></i></div>
+        <div class="search-icon" onclick="search()"><i class="fas fa-search"></i></div> -->
+
+        
+        <!-- Login part -->
         <div class="right-items">
             <a href="javascript:void(0)" onclick="lForm()">Login</a>
             <a href="javascript:void(0)" onclick="rForm()">Sign Up</a>
-            <a href="cart-page.php"><i class="fas fa-shopping-cart"></i><sup>0</sup></a>
+            <a href="cart-page.php"><i class="fas fa-shopping-cart"></i><sup><?php echo $num ?></sup></a>
         </div>
     </nav>
 

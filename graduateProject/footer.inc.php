@@ -76,8 +76,8 @@
                     <p><i class="fas fa-phone me-3"></i> (04)-8321588</p>
                     <!-- <p><i class="fas fa-print me-3"></i> + 04 8321588</p> -->
 
-                    <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="#" role="button"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-primary btn-floating m-1" style="background-color: #89fa20;" href="#" role="button"><i class="fab fa-line"></i></a>
+                    <a href="#" role="button" class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" role="button" class="btn btn-primary btn-floating m-1" style="background-color: #89fa20;" ><i class="fab fa-line"></i></a>
 
                 </div>
                 <!-- Grid column -->
@@ -97,7 +97,6 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-
 <script type="text/javascript" src="js/main.js"></script>
 </body>
 

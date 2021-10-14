@@ -2,7 +2,7 @@
 <?php
 include "top.inc.php";
 $pro_id = mysqli_real_escape_string($conn, $_GET['id']);
-include "function.inc.php";
+// include "function.inc.php";
 ?>
 <section class="singlePro">
     <div class="row">
@@ -19,8 +19,8 @@ include "function.inc.php";
                 <h2><?php echo $list['pname'] ?></h2>
                 <label class="sprice">$ <?php echo $list['sprice'] ?></label> &nbsp; &nbsp; <label class="mrp"><del>$ <?php echo $list['mrp'] ?></del></label>
                 <br>
-                <form method="post" action="add_cart.php" >
-                    <input type="number" name="qty" value="1">
+                <form method="post" action="add_cart.php">
+                    <input type="number" name="qty" value="1" min="1" max="5">
                     <p><?php echo $list['short_desc'] ?></p>
                     <p><?php echo $list['long_desc'] ?></p>
 

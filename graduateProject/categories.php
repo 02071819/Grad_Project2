@@ -1,6 +1,6 @@
 <?php
 include "top.inc.php";
-include "function.inc.php";
+// include "function.inc.php";
 $cat_id = mysqli_real_escape_string($conn, $_GET['cat_id']);
 ?>
 <section class="newProducts">
@@ -20,7 +20,7 @@ $cat_id = mysqli_real_escape_string($conn, $_GET['cat_id']);
                         <p> $ <?php echo $list['sprice'] ?> </p>
                         <form action="add_cart.php" method="post">
                             <input type="hidden" name="pid" value="<?php echo $list['id'] ?>">
-                            <input type="submit" name="cart" value="Add Cart" class="cartBtn">
+                            <!-- <input type="submit" name="cart" value="Add Cart" class="cartBtn"> -->
                         </form>
                     </div>
                 </div>

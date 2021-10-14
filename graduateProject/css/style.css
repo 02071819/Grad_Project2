@@ -143,20 +143,21 @@ nav{
     height: 50px;
     line-height: 60px;
 }
-.search-form form .input-data{
+.search-form form .inputData{
     width: 80%;
+    height:30px;
     padding: 8px 8px;
     outline: none;
     border: 0;
 }
-.search-form form .search-btn{
+.search-form form .search-botton{
     background: #fff;
     border: 0;
     padding: 10px;
-    height: 36px;
+    height: 30px;
     cursor: pointer;
 }
-.search-form form .search-btn img{
+.search-form form .search-botton img{
     filter: invert(1);
     line-height: 36px;
     margin-top: 3px;
@@ -423,9 +424,11 @@ th:last-child{
     font-size: 1em;
     margin-top: 20px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 /* footer */
+
 /* .btn-primary {
     color: #fff;
     background-color: #0d6efd;
@@ -436,3 +439,6 @@ th:last-child{
     background-color: #509410;
     border-color: #89fa20;
 } */
+.text-reset {
+    text-decoration: none;
+}

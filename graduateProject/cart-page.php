@@ -1,5 +1,6 @@
 <?php
 include "top.inc.php";
+// include "function.inc.php";
 ?>
 <!-- <!DOCTYPE html>
 <html lang="en">
@@ -51,80 +52,104 @@ include "top.inc.php";
         </div>
     </section> -->
 
-    <div class="cartTable">
+<div class="cartTable">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <?php
+        $ip = getIP();
+        $cartSql = "SELECT * FROM `guest_cart` WHERE `ip_address` = '$ip'";
+        $con = mysqli_query($conn, $cartSql);
+        $check = mysqli_num_rows($con);
+        $Total_price = 0;
+        $Total_total = 0;
+        if ($check > 0) {
+            while ($row = mysqli_fetch_assoc($con)) {
+                $id = $row['pid'];
+                $sql = mysqli_query($conn, "select * from products where id = '$id'");
+                $data = mysqli_fetch_assoc($sql);
+                $sub_total = $row['qty'] * $data['sprice'];
+                $Total_price = $Total_price + $sub_total;
+                $Total_total = $Total_price + 110;
+        ?>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="./images/<?php echo $data['pimage'] ?>" width="80px">
+                            <div>
+                                <p><?php echo $data['pname'] ?></p>
+                                <small>Price: $<?php echo $data['sprice'] ?></small>
+                                <br>
+                                <a href="add_cart.php?id=<?php echo $row['id'] ?>">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><?php echo $row['qty'] ?></td>
+                    <td>$<?php echo $sub_total ?></td>
+                </tr>
+        <?php }
+        } else {
+            echo "Cart empty !";
+        } ?>
+
+
+
+        <!-- <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="./images/shoes_3.jpg" width="80px">
+                        <div>
+                            <p>Red Printed Tshirt</p>
+                            <small>Price: $1000.00</small>
+                            <br>
+                            <a href="#">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" name="" value="1"></td>
+                <td>$1000.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="./images/shoes_3.jpg" width="80px">
+                        <div>
+                            <p>Red Printed Tshirt</p>
+                            <small>Price: $1000.00</small>
+                            <br>
+                            <a href="#">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" name="" value="1"></td>
+                <td>$1000.00</td>
+            </tr> -->
+    </table>
+
+    <div class="total_price">
         <table>
             <tr>
-                <th>Product</th>
-                <th>Quantity</th>
-                <th>Subtotal</th>
+                <td>Subtotal</td>
+                <td>$<?php echo $Total_price ?></td>
             </tr>
             <tr>
-                <td>
-                    <div class="cart-info">
-                        <img src="./images/<?php echo $data['pimage'] ?>" width="80px">
-                        <div>
-                            <p><?php echo $data['pname']?></p>
-                            <small>Price: $<?php echo $data['sprice']?></small>
-                            <br>
-                            <a href="#">Remove</a>
-                        </div>
-                    </div>
-                </td>
-                <td><input type="number" name="" value="1"></td>
-                <td>$1000.00</td>
+                <td>Tax</td>
+                <td>$110</td>
             </tr>
             <tr>
-                <td>
-                    <div class="cart-info">
-                        <img src="./images/shoes_3.jpg" width="80px">
-                        <div>
-                            <p>Red Printed Tshirt</p>
-                            <small>Price: $1000.00</small>
-                            <br>
-                            <a href="#">Remove</a>
-                        </div>
-                    </div>
-                </td>
-                <td><input type="number" name="" value="1"></td>
-                <td>$1000.00</td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="cart-info">
-                        <img src="./images/shoes_3.jpg" width="80px">
-                        <div>
-                            <p>Red Printed Tshirt</p>
-                            <small>Price: $1000.00</small>
-                            <br>
-                            <a href="#">Remove</a>
-                        </div>
-                    </div>
-                </td>
-                <td><input type="number" name="" value="1"></td>
-                <td>$1000.00</td>
+                <td>Total</td>
+                <td>$<?php echo $Total_total ?></td>
             </tr>
         </table>
-
-        <div class="total_price">
-            <table>
-                <tr>
-                    <td>Subtotal</td>
-                    <td>$1000.00</td>
-                </tr>
-                <tr>
-                    <td>Tax</td>
-                    <td>$1000.00</td>
-                </tr>
-                <tr>
-                    <td>Total</td>
-                    <td>$1000.00</td>
-                </tr>
-            </table>
-        </div>
-        <div class="checkoutbtn">
-            <button type="button" class="check-btn"><span></span>checkout</button>
-        </div>
     </div>
+    <div class="checkoutbtn">
+        <a href="index.php" class="check-btn">Continue Shopping</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="button" class="check-btn"><span></span>checkout</button>
+    </div>
+</div>
 
 
 <?php

@@ -1,7 +1,7 @@
 <?php
 include "connection.inc.php";
 include "top.inc.php";
-include "function.inc.php";
+// include "function.inc.php";
 ?>
 
 <!-----------------------Products Part------------------------->
@@ -21,7 +21,7 @@ include "function.inc.php";
                 <div class="details">
                     <a href="products-detail.php?id=<?php echo $list['id'] ?>"><h3><?php echo $list['pname'] ?></h3></a>
                     <p>$ <?php echo $list['sprice'] ?></p>
-                    <input type="submit" name="cart" value="Add Cart" class="cartBtn">
+                    <!-- <input type="submit" name="cart" value="Add Cart" class="cartBtn"> -->
                 </div>
             </div>
             <?php } ?>

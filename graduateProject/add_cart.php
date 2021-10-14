@@ -12,8 +12,14 @@ if(isset($_POST['cart'])){
     }else{
         $query = mysqli_query($conn,"INSERT INTO 
             `guest_cart`(`pid`, `qty`, `create_on`, `ip_address`) VALUES ('$id','$qty',NOW(),'$ip')");
-            header("location:index.php");
+            header("location:cart-page.php");
             die();
     }
 }
-?>
+
+if(isset($_GET['id']) && $_GET['id']!=''){
+    $id=mysqli_real_escape_string($conn,$_GET['id']);
+    $del=mysqli_query($conn,"DELETE FROM `guest_cart` WHERE id='$id'");
+    header("location:cart-page.php");
+    die();
+}
