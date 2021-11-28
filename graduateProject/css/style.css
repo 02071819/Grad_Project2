@@ -13,7 +13,7 @@ body{
     width: 100%;
     position: relative;
     height: 600px;
-    background: #ff0000c9;
+    background: orange;
     display: flex;
 }
 .header .content{
@@ -76,7 +76,6 @@ body{
     /* background-image: url('../images/close.png'); */
     background-size: 15px;
 }
-/*------------------Navigation CSS------------------*/
 nav{
     position: fixed;
     top: 0;
@@ -97,14 +96,96 @@ nav{
     list-style: none;
     position: relative;
 }
-.nav-wrap li{
+
+.nav-list{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.nav-item{
+    list-style: none;
+}
+.nav-link{
+    display: block;
+    font-size: 1.12rem;
+    color: black;
+    /* border: 1px solid black; */
+    padding: 1rem 1rem;
+}
+/* sublist */
+.sublist-container{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    top:70px;
+    left: 0;
+    box-shadow: 0px 4px 8px -8px rgb(75, 74, 74);
+    transform-origin: top center;
+    transform: scaleY(0);
+    transition: all .1s ease-out;
+}
+.sublist-container2{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    top:70px;
+    left: 0;
+    box-shadow: 0px 4px 8px -4px rgb(75, 74, 74);
+    transform-origin: top center;
+    transform: scaleY(0);
+    transition: all .1s ease-out;
+}
+.sub-list{
+    display: flex;
+    margin:0;
+    padding: 0;
+}
+.sub-item{
+    list-style: none;
+}
+.sub-link{
+    display: block;
+    font-size: 1.1rem;
+    color: black;
+    padding: 5px 10px;
+    margin: 0 20px;
+    /* border: black solid 1px; */
+}
+.nav-item:hover .sublist-container{
+    display: flex;
+    transform: scaleY(1);
+}
+.nav-item:hover .sublist-container2{
+    transform: scaleY(1);
+    display: flex;
+}
+/* subsublist */
+.subsub-item{
+    list-style: none;
+    
+}
+.subsub-link{
+    display: block;
+    font-size: 1.1em;
+    color: rgb(100, 100, 100);
+    /* border: 1px solid black; */
+    margin-top: 8px;
+}
+
+/* .nav-wrap li{
     margin: 0px 10px;
 }
 .nav-wrap li a{
     font-size: 1em;
-    color: #fff;
+    color: rgb(41, 158, 226);
     text-decoration: none;
-}
+} */
 .logo{
     color: #fff;
     text-decoration: none;
@@ -428,17 +509,32 @@ th:last-child{
 }
 
 /* footer */
-
-/* .btn-primary {
-    color: #fff;
-    background-color: #0d6efd;
-    border-color: transparent; 
+.footer{
+    width: 100%;
+    /* height: 250px; */
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.01rem;
+    font-weight:bold;
+    background-color: #737CA1;
+    /* background-color: rgb(49, 48, 48); */
 }
-.btn-primary:hover {
-    color: rgb(255, 255, 255);
-    background-color: #509410;
-    border-color: #89fa20;
-} */
-.text-reset {
-    text-decoration: none;
+.text-style{
+    margin-bottom: 1rem;
+    color:#ffffff;
+    font-size: 1.1em;
+}
+.footer p:hover{
+    color: rgb(45, 45, 255);
+    color: rgb(15, 15, 15);
+}
+.qrcord-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 10%;
+    padding: 0;
+}
+.qrcord-png{
+    display: block;
+    width: 100%;
 }

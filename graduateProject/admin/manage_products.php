@@ -81,6 +81,7 @@ if (isset($_POST['submit'])) {
 }
 ?>
 
+
 <div class="rightDiv">
     <div class="headTitle">
         <h2>Products Manage</h2>
@@ -101,6 +102,8 @@ if (isset($_POST['submit'])) {
                         echo "<option value=".$get['id'].">".$get['catname']."</option>";
                     }
                 }
+
+            //針對products這個database的cat_id去對應categories這個database的id 藉此對應品牌(categories)
             ?>
         </select>
 
