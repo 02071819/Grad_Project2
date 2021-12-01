@@ -2,6 +2,7 @@
 $msg = "";//紅色警語
 $pname = "";
 $cat_id = "";
+$subcat_id = "";
 $mrp="";
 $sprice="";
 $short_desc="";
@@ -18,6 +19,7 @@ if (isset($_GET['id']) && $_GET['id'] != '') {
     $res = mysqli_fetch_assoc($display);
     $pname = $res['pname'];
     $cat_id = $res['cat_id'];
+    $subcat_id = $res['subcat_id'];
     $mrp = $res['mrp'];
     $sprice = $res['sprice'];
     $short_desc = $res['short_desc'];
@@ -29,6 +31,7 @@ if (isset($_GET['id']) && $_GET['id'] != '') {
 if (isset($_POST['submit'])) {
     $pname = mysqli_real_escape_string($conn, $_POST['pname']);
     $cat_id = mysqli_real_escape_string($conn, $_POST['cat_id']);
+    $subcat_id = mysqli_real_escape_string($conn, $_POST['subcat_id']);
     $mrp = mysqli_real_escape_string($conn, $_POST['mrp']);
     $sprice = mysqli_real_escape_string($conn, $_POST['sprice']);
     $short_desc = mysqli_real_escape_string($conn, $_POST['short_desc']);
@@ -62,14 +65,14 @@ if (isset($_POST['submit'])) {
     if ($msg == "") {
         if (isset($_GET['id']) && $_GET['id'] != '') {
             $update = mysqli_query($conn, "UPDATE `products` SET 
-                                    `cat_id`='$cat_id',`pname`='$pname',`mrp`='$mrp',
+                                    `cat_id`='$cat_id',`subcat_id`='$subcat_id',`pname`='$pname',`mrp`='$mrp',
                                     `sprice`='$sprice',`short_desc`='$short_desc',`long_desc`='$long_desc',
                                     `keywords`='$keywords',`create_at`= NOW() WHERE id ='$id'");
             header("location:products.php");
             die();
         } else {
-            $query = mysqli_query($conn, "INSERT INTO `products`(`cat_id`, `pname`, `mrp`, `sprice`, `short_desc`, `long_desc`, `keywords`, `pimage`, `status`, `create_at`) 
-                                VALUES ('$cat_id','$pname','$mrp','$sprice','$short_desc','$long_desc','$keywords','$img','1', NOW())");
+            $query = mysqli_query($conn, "INSERT INTO `products`(`cat_id`, `subcat_id`, `pname`, `mrp`, `sprice`, `short_desc`, `long_desc`, `keywords`, `pimage`, `status`, `create_at`) 
+                                VALUES ('$cat_id','$subcat_id','$pname','$mrp','$sprice','$short_desc','$long_desc','$keywords','$img','1', NOW())");
             if ($query) {
                 header("location:products.php");
                 die();
@@ -100,6 +103,23 @@ if (isset($_POST['submit'])) {
                         ";
                     }else{
                         echo "<option value=".$get['id'].">".$get['catname']."</option>";
+                    }
+                }
+
+            //針對products這個database的cat_id去對應categories這個database的id 藉此對應品牌(categories)
+            ?>
+        </select>
+
+        <select name="subcat_id">
+            <?php
+                $subcat = mysqli_query($conn,"select * from subcategories");
+                while($get=mysqli_fetch_assoc($subcat)){
+                    if($get['id']==$cat_id){
+                        echo "
+                        <option selected value=".$get['id'].">".$get['subname']."</option>
+                        ";
+                    }else{
+                        echo "<option value=".$get['id'].">".$get['subname']."</option>";
                     }
                 }
 

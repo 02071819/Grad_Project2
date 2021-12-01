@@ -1,10 +1,13 @@
 <?php
-function get_product($conn, $limit = '', $cat_id = '', $pro_id = '')
+function get_product($conn, $limit = '', $cat_id = '', $subcat_id = '', $pro_id = '')
 {
     $sql = "select * from products where status=1 ";
     
     if ($cat_id != '') {
         $sql .= " and cat_id=$cat_id";
+    }
+    if ($subcat_id != '') {
+        $sql .= " and subcat_id=$subcat_id";
     }
     if ($pro_id != '') {
         $sql .= " and id=$pro_id";

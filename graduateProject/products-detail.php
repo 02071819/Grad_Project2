@@ -7,7 +7,7 @@ $pro_id = mysqli_real_escape_string($conn, $_GET['id']);
 <section class="singlePro">
     <div class="row">
         <?php
-        $get_product = get_product($conn, '', '', $pro_id);
+        $get_product = get_product($conn, '', '', '', $pro_id);
         foreach ($get_product as $list) { ?>
 
             <div class="singlecol">

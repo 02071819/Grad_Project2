@@ -4,8 +4,6 @@ include "connection.inc.php";
 include "function.inc.php";
 $query = mysqli_query($conn, "select * from categories");
 $subquery = mysqli_query($conn, "select * from subcategories");
-$subquery1 = mysqli_query($conn, "select * from subcategories");
-
 
 $ip = getIP();
 $cart = mysqli_query($conn, "select * from guest_cart where ip_address = '$ip'");
@@ -80,20 +78,20 @@ $num = mysqli_num_rows($cart);
                                         <li><a href='categories.php?cat_id=" . $data['id'] . "'>" . $data['catname'] . "</a></li>
                                     ";
                             }
-
-                            while ($data = mysqli_fetch_assoc($subquery)) {
-                                echo " 
-                                        <li><a href='subcategories.php?cat_id=" . $data['id'] . "'>" . $data['subname'] . "</a></li>
-                                    ";
-                            }
-                            while ($data = mysqli_fetch_assoc($subquery1)) {
-                                echo " 
-                                        <li><a href='subcategories.php?cat_id=" . $data['id'] . "'>" . $data['subname'] . "</a></li>
-                                    ";
-                            }
-
                             ?>
                         </ul>
+
+                        <ul class="sub-list2">
+                            <?php
+                            while ($data = mysqli_fetch_assoc($subquery)) {
+                                echo " 
+                                        <li><a href='subcategories.php?subcat_id=" . $data['id'] . "'>" . $data['subname'] . "</a></li>
+                                    ";
+                            }
+                            ?>
+
+                        </ul>
+
                     </div>
                 </li>
 

@@ -1,12 +1,12 @@
 <?php
 include "top.inc.php";
 // include "function.inc.php";
-$cat_id = mysqli_real_escape_string($conn, $_GET['cat_id']);
+$subcat_id = mysqli_real_escape_string($conn, $_GET['subcat_id']);
 ?>
 <section class="newProducts">
     <div class="Indexrow">
         <?php
-        $get_product = get_product($conn, '', $cat_id, '', '');
+        $get_product = get_product($conn, '', '', $subcat_id, '');
         if (count($get_product) > 0) {
             foreach ($get_product as $list) { ?>
                 <div class="Indexcol">
