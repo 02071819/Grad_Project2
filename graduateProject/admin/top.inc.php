@@ -1,6 +1,5 @@
 <?php
 include("inc/connection.inc.php");
-include("footer.inc.php");
 
 session_start();
 $uname = $_SESSION['uname'];
@@ -29,3 +28,4 @@ if ($uname) {
         <p>Username : <?php echo $uname; ?></p>
         <a href="logout.php">Logout</a>
     </header>
+</body>

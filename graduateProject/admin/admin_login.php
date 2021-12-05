@@ -43,13 +43,23 @@ if(isset($_POST['submit'])){
             background: #fff;
             justify-content: center;
             align-items: center;
+            background-image: url("../images/hermes-rivera-OX_en7CXMj4-unsplash.jpg");
+            /* background-size: contain; */
         }
         .container{
             width: 500px;
+            height: 360px;
             border: 1px solid #f2f2f2;
+            background-color: #f2f2f2;
+        }
+        .container h1{
+            padding-left: 120px;
+            padding-top: 20px;
         }
         .container .loginForm{
             width: 100%;
+            position: relative;
+            padding: 40px;
         }
         .container .loginForm .data{
             width: 100%;
@@ -78,6 +88,7 @@ if(isset($_POST['submit'])){
 
 <body>
 <div class="container">
+    <h1>Commerce CMS</h1>
     <form action="" method="post" class="loginForm">
         <input type="text" name="uname" placeholder="Username" class="data" required>
         <input type="password" name="pswd" placeholder="Password" class="data" required>
