@@ -384,8 +384,8 @@ nav{
 }
 .singlePro .singlecol .imgBx{
     position: relative;
-    width: 320px;
-    height: 200px;
+    width: 400px;
+    height: 250px;
 }
 .singlePro .singlecol .imgBx img{
     position: absolute;

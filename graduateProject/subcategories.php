@@ -11,7 +11,7 @@ $subcat_id = mysqli_real_escape_string($conn, $_GET['subcat_id']);
             foreach ($get_product as $list) { ?>
                 <div class="Indexcol">
                     <div class="imgBx">
-                        <img src="images/<?php echo $list['pimage'] ?>">
+                        <img src="./admin/assets/images/<?php echo $list['pimage'] ?>">
                     </div>
                     <div class="details">
                         <a href="products-detail.php?id=<?php echo $list['id'] ?>">

@@ -205,8 +205,6 @@ $num = mysqli_num_rows($cart);
 
 
 
-
-
     <!--HeadPic-->
     <section class="header">
         <div class="content">
