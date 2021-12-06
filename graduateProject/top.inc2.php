@@ -64,7 +64,7 @@ $num = mysqli_num_rows($cart);
     </div>
 
     <nav>
-        <a href="index.php" class="logo">WINHORN</a>
+        <a href="./index.php" class="logo">WINHORN</a>
         <ul class="nav-wrap">
 
             <ul class="nav-list">
@@ -201,23 +201,3 @@ $num = mysqli_num_rows($cart);
             <a href="cart-page.php"><i class="fas fa-shopping-cart"></i><sup><?php echo $num ?></sup></a>
         </div>
     </nav>
-
-
-
-
-    <!--HeadPic-->
-    <section class="header">
-        <div class="content">
-            <div class="col50">
-                <h1 class="hero-title">Lorem ipsum, dolor sit amet </h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quibusdam
-                    consectetur asperiores dolorem quas! Exercitationem nisi repellat sint natus impedit.</p>
-                <a href="#" class="hero-btn btn">Shop Now</a>
-            </div>
-            <div class="Headpic">
-                <div class="imgBx">
-                    <img src="images/shoes01.png">
-                </div>
-            </div>
-        </div>
-    </section>

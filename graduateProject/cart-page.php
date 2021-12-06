@@ -78,7 +78,7 @@ include "top.inc.php";
                 <tr>
                     <td>
                         <div class="cart-info">
-                            <img src="./images/<?php echo $data['pimage'] ?>" width="80px">
+                            <img src="./admin/assets/images/<?php echo $data['pimage'] ?>" width="80px">
                             <div>
                                 <p><?php echo $data['pname'] ?></p>
                                 <small>Price: $<?php echo $data['sprice'] ?></small>

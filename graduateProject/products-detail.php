@@ -12,7 +12,7 @@ $pro_id = mysqli_real_escape_string($conn, $_GET['id']);
 
             <div class="singlecol">
                 <div class="imgBx">
-                    <img src="images/<?php echo $list['pimage'] ?>">
+                    <img src="./admin/assets/images/<?php echo $list['pimage'] ?>">
                 </div>
             </div>
             <div class="singlecol">

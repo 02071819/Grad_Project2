@@ -11,12 +11,12 @@ include "top.inc.php";
         </div>
         <div class="Indexrow">
             <?php
-            $get_product = get_product($conn,6);
+            $get_product = get_product($conn,8);
             foreach($get_product as $list){ ?>
             
             <div class="Indexcol">
                 <div class="imgBx">
-                    <img src="images/<?php echo $list['pimage'] ?>">
+                    <img src="./admin/assets/images/<?php echo $list['pimage'] ?>">
                 </div>
                 <div class="details">
                     <a href="products-detail.php?id=<?php echo $list['id'] ?>"><h3><?php echo $list['pname'] ?></h3></a>
