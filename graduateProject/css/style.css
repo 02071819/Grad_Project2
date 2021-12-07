@@ -147,13 +147,17 @@ nav{
     transform: scaleY(0);
     transition: all .1s ease-out;
 }
+/*sub-list 品牌列表 */
 .sub-list{
+    position: relative;
     display: flex;
-    margin: 0;
     padding: 0;
     list-style: none;
 }
+/*sub-list2 品牌列表下的物品分類 */
 .sub-list2{
+    position: relative;
+    right: 70px;
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -164,7 +168,7 @@ nav{
     position: relative;
     left: 100px;
     width: 100px;
-    margin: 8px 30px;
+    margin: 0 40px;
     height: 50px;
 }
 .sub-list2 li{
@@ -192,10 +196,10 @@ nav{
     list-style: none;
 }
 .sub-link{
+    width: 100px;
     display: block;
     font-size: 1.1rem;
     color: black;
-    padding: 5px 10px;
     margin: 0 20px;
     /* border: black solid 1px; */
 }
@@ -207,17 +211,19 @@ nav{
     transform: scaleY(1);
     display: flex;
 }
+
 /* subsublist */
 .subsub-item{
     list-style: none;
     
 }
 .subsub-link{
+    position: relative;
+    right: 130px;
     display: block;
     font-size: 1.1em;
     color: rgb(100, 100, 100);
     /* border: 1px solid black; */
-    margin-top: 8px;
 }
 
 /* .nav-wrap li{

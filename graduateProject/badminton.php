@@ -1,3 +1,8 @@
+<?php
+include "top.inc2.php";
+// include "function.inc.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,161 +25,6 @@
 </head>
 
 <body>
-    <!-- header -->
-    <header class="page-header">
-        <a class="logo-link" href="index.html"><img class="logo" src="../img/WHlogo-719px.png" alt="文宏"></a>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a href="" class="nav-link">品牌列表</a>
-                    <div class="sublist-container">
-                        <ul class="sub-list">
-                            <li class="sub-item">
-                                <a href="" class="sub-link">Nike</a>
-                                <ul class="subsub-list">
-                                    <li class="subsub-item"><a href="" class="subsub-link">上衣</a></li>
-                                    <li class="subsub-item"><a href="" class="subsub-link">下著</a></li>
-                                    <li class="subsub-item"><a href="" class="subsub-link">鞋子</a></li>
-                                    <li class="subsub-item"><a href="" class="subsub-link">配件</a></li>
-                                    <!-- <li class="subsub-item"><a href="" class="subsub-link"></a></li> -->
-                                </ul>
-                            </li>
-                            <li class="sub-item"><a href="" class="sub-link">Adidas</a>
-                                <ul class="subsub-list">
-                                    <li class="subsub-item"><a href="" class="subsub-link">上衣</a></li>
-                                    <li class="subsub-item"><a href="" class="subsub-link">下著</a></li>
-                                    <li class="subsub-item"><a href="" class="subsub-link">鞋子</a></li>
-                                    <li class="subsub-item"><a href="" class="subsub-link">配件</a></li>
-                                    <!-- <li class="subsub-item"><a href="" class="subsub-link"></a></li> -->
-                                </ul>
-                            </li>
-                            <li class="sub-item"><a href="" class="sub-link">Mizuno</a>
-                                <ul class="subsub-list">
-                                    <li class="subsub-item"><a href="" class="subsub-link">上衣</a></li>
-                                    <li class="subsub-item"><a href="" class="subsub-link">下著</a></li>
-                                    <li class="subsub-item"><a href="" class="subsub-link">鞋子</a></li>
-                                    <li class="subsub-item"><a href="" class="subsub-link">配件</a></li>
-                                    <!-- <li class="subsub-item"><a href="" class="subsub-link"></a></li> -->
-                                </ul>
-                            </li>
-                            <li class="sub-item"><a href="" class="sub-link">Asics</a>
-                                <ul class="subsub-list">
-                                    <li class="subsub-item"><a href="" class="subsub-link">上衣</a></li>
-                                    <li class="subsub-item"><a href="" class="subsub-link">下著</a></li>
-                                    <li class="subsub-item"><a href="" class="subsub-link">鞋子</a></li>
-                                    <li class="subsub-item"><a href="" class="subsub-link">配件</a></li>
-                                    <!-- <li class="subsub-item"><a href="" class="subsub-link"></a></li> -->
-                                </ul>
-                            </li>
-                            <li class="sub-item"><a href="" class="sub-link">Skechers</a>
-                                <ul class="subsub-list">
-                                    <li class="subsub-item"><a href="" class="subsub-link">運動鞋</a></li>
-                                </ul>
-                            </li>
-                            <li class="sub-item"><a href="" class="sub-link">keds</a>
-                                <ul class="subsub-list">
-                                    <li class="subsub-item"><a href="" class="subsub-link">女鞋</a></li>
-                                    <!-- <li class="subsub-item"><a href="" class="subsub-link"></a></li> -->
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">專業運動</a>
-                    <div class="sublist-container2">
-                        <ul class="sub-list">
-                            <li class="sub-item">
-                                <a href="" class="sub-link">球類用品</a>
-                                <ul class="subsub-list">
-                                    <li class="subsub-item"><a href="" class="subsub-link">籃球</a></li>
-                                    <li class="subsub-item"><a href="" class="subsub-link">棒球</a></li>
-                                    <li class="subsub-item"><a href="" class="subsub-link">排球</a></li>
-                                    <li class="subsub-item"><a href="" class="subsub-link">羽毛球</a></li>
-                                    <li class="subsub-item"><a href="" class="subsub-link">網球</a></li>
-                                    <li class="subsub-item"><a href="" class="subsub-link">桌球</a></li>
-                                    <li class="subsub-item"><a href="" class="subsub-link">足球</a></li>
-                                    <!-- <li class="subsub-item"><a href="" class="subsub-link"></a></li> -->
-                                </ul>
-                            </li>
-                            <li class="sub-item">
-                                <a href="" class="sub-link">訓練器材</a>
-                                <ul class="subsub-list">
-                                    <li class="subsub-item"><a href="" class="subsub-link">啞鈴</a></li>
-                                    <li class="subsub-item"><a href="" class="subsub-link">彈力帶</a></li>
-                                    <li class="subsub-item"><a href="" class="subsub-link">瑜珈墊</a></li>
-                                    <li class="subsub-item"><a href="" class="subsub-link">滾筒</a></li>
-                                    <!-- <li class="subsub-item"><a href="" class="subsub-link"></a></li> -->
-                                </ul>
-                            </li>
-                            <li class="sub-item"><a href="" class="sub-link">登山器具</a>
-                                <ul class="subsub-list">
-                                    <li class="subsub-item"><a href="" class="subsub-link">登山服飾</a></li>
-                                    <!-- <li class="subsub-item"><a href="" class="subsub-link">登山褲</a></li> -->
-                                    <li class="subsub-item"><a href="" class="subsub-link">登山鞋</a></li>
-                                    <li class="subsub-item"><a href="" class="subsub-link">登山杖</a></li>
-                                    <li class="subsub-item"><a href="" class="subsub-link">背包</a></li>
-                                    <li class="subsub-item"><a href="" class="subsub-link">睡袋</a></li>
-                                    <!-- <li class="subsub-item"><a href="" class="subsub-link">帳篷</a></li> -->
-                                    <!-- <li class="subsub-item"><a href="" class="subsub-link"></a></li> -->
-                                </ul>
-                            </li>
-                            <li class="sub-item"><a href="" class="sub-link">自行車</a>
-                                <ul class="subsub-list">
-                                    <li class="subsub-item"><a href="" class="subsub-link">自行車衣</a></li>
-                                    <!-- <li class="subsub-item"><a href="" class="subsub-link">登山褲</a></li> -->
-                                    <li class="subsub-item"><a href="" class="subsub-link">自行車褲</a></li>
-                                    <li class="subsub-item"><a href="" class="subsub-link">配件</a></li>
-                                    <li class="subsub-item"><a href="" class="subsub-link">背包</a></li>
-                                    <!-- <li class="subsub-item"><a href="" class="subsub-link">睡袋</a></li> -->
-                                    <!-- <li class="subsub-item"><a href="" class="subsub-link">帳篷</a></li> -->
-                                    <!-- <li class="subsub-item"><a href="" class="subsub-link"></a></li> -->
-                                </ul>
-                            </li>
-                            <li class="sub-item"><a href="" class="sub-link">游泳</a>
-                                <ul class="subsub-list">
-                                    <li class="subsub-item"><a href="" class="subsub-link">泳衣</a></li>
-                                    <!-- <li class="subsub-item"><a href="" class="subsub-link">登山褲</a></li> -->
-                                    <li class="subsub-item"><a href="" class="subsub-link">泳褲</a></li>
-                                    <li class="subsub-item"><a href="" class="subsub-link">配件</a></li>
-                                    <!-- <li class="subsub-item"><a href="" class="subsub-link"></a></li> -->
-                                    <!-- <li class="subsub-item"><a href="" class="subsub-link">睡袋</a></li> -->
-                                    <!-- <li class="subsub-item"><a href="" class="subsub-link">帳篷</a></li> -->
-                                    <!-- <li class="subsub-item"><a href="" class="subsub-link"></a></li> -->
-                                </ul>
-                            </li>
-                            <li class="sub-item"><a href="" class="sub-link">滑板</a>
-                                <ul class="subsub-list">
-                                    <li class="subsub-item"><a href="" class="subsub-link">滑板</a></li>
-                                    <!-- <li class="subsub-item"><a href="" class="subsub-link">登山褲</a></li> -->
-                                    <li class="subsub-item"><a href="" class="subsub-link">蛇板</a></li>
-                                    <li class="subsub-item"><a href="" class="subsub-link">雙龍板</a></li>
-                                </ul>
-                            </li>
-                            <li class="sub-item"><a href="" class="sub-link">直排輪</a></li>
-                            <!-- <li class="sub-item"><a href="" class="sub-link">直排輪</a></li> -->
-                        </ul>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">棒球專區</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./羽毛球介紹.html" class="nav-link">羽毛球專區</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./故事屋介紹.html" class="nav-link">文宏故事屋</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="header-btn">
-            <a href="" class="header-btn-link"><i class="fas fa-user"></i></a>
-            <a href="" class="header-btn-link"><i class="fas fa-shopping-bag"></i></a>
-            <a class="header-btn-link"><i class="fas fa-search"></i></a>
-            <!-- <div class="search-box"></div> -->
-        </div>
-    </header>
-    <!-- header end -->
     <!-- carousel -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -187,13 +37,13 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../img/pexels-eric-anada-3660204.jpg" class="d-block w-100" alt="...">
+                <img src="./images/pexels-eric-anada-3660204.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="../img/pexels-leo-zhao-5767580.jpg" class="d-block w-100" alt="...">
+                <img src="./images/pexels-leo-zhao-5767580.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="../img/pexels-vladislav-vasnetsov-2202685.jpg" class="d-block w-100" alt="...">
+                <img src="./images/pexels-vladislav-vasnetsov-2202685.jpg" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -262,7 +112,7 @@
     <section class="container">
         <div class="container-box">
             <div class="container-box-img">
-                <img class="img2" src="/img/KBA0500RD(3).jpg" alt="">
+                <img class="img2" src="./images/KBA0500RD(3).jpg" alt="">
             </div>
             <a class="container-box-button" href="">
                 <p>了解詳情</p>
@@ -270,7 +120,7 @@
         </div>
         <div class="container-box">
             <div class="container-box-img">
-                <img class="img2" src="/img/384844B502B2AC192F98D5413BE4F5D9E9F50A99.jpg" alt="">
+                <img class="img2" src="./images/384844B502B2AC192F98D5413BE4F5D9E9F50A99.jpg" alt="">
             </div>
             <a class="container-box-button" href="">
                 <p>了解詳情</p>
@@ -278,7 +128,7 @@
         </div>
         <div class="container-box">
             <div class="container-box-img">
-                <img class="img2" src="/img/1BA10100C0-SP-9406712.jpg" alt="">
+                <img class="img2" src="./images/1BA10100C0-SP-9406712.jpg" alt="">
             </div>
             <a class="container-box-button" href="">
                 <p>了解詳情</p>
@@ -293,7 +143,7 @@
     <!--老師傅介紹-->
     <section class="section">
         <div class="section-img">
-            <img data-aos="fade-left" data-aos-duration="500" src="/img/502994.jpg" alt="...">
+            <img data-aos="fade-left" data-aos-duration="500" src="./images/502994.jpg" alt="...">
         </div>
         <!-- <div class="section-button">
             <a href="#section1">
@@ -320,7 +170,7 @@
         <!-- 區塊一 -->
         <div data-aos="fade-up" class="card">
             <!-- TODO:上方圓形圖片 -->
-            <img class="square gap " src="/img/IMG_8469a.JPG" alt="">
+            <img class="square gap " src="./images/IMG_8469a.jpg" alt="">
             <!-- TODO:下方介紹文字 -->
             <div class="card-content">
                 <h2>選擇球拍</h2>
@@ -332,7 +182,7 @@
         <!-- 區塊二 -->
         <div data-aos="fade-up" data-aos-delay="500" class="card">
             <!-- 上方圓形圖片 -->
-            <img class="square gap" src="/img/IMG_8472a.jpg" alt="">
+            <img class="square gap" src="./images/IMG_8472a.jpg" alt="">
             <!-- TODO:下方介紹文字 -->
             <div class="card-content">
                 <h2>拍線樣式</h2>
@@ -345,7 +195,7 @@
         <!-- 區塊三 -->
         <div data-aos="fade-up" data-aos-delay="1000" class="card">
             <!-- TODO:上方圓形圖片 -->
-            <img class="square gap" src="/img/S__31965193a.jpg" alt="">
+            <img class="square gap" src="./images/S__31965193a.jpg" alt="">
             <!-- TODO:下方介紹文字 -->
             <div class="card-content">
                 <h2>穿線服務</h2>

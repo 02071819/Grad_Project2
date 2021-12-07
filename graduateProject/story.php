@@ -57,7 +57,7 @@ include "top.inc2.php";
     <div class="story-list">
         <!-- 第一頁"起始"內容 -->
         <div class="story" id="section1">
-            <img data-aos="fade-up" data-aos-duration="3000" class="story-img" src="/img/img006.jpg" alt="">
+            <img data-aos="fade-up" data-aos-duration="3000" class="story-img" src="./images/img006.jpg" alt="">
             <div class="story-body">
                 <h1 class="story-title">起始點</h1>
                 <hr>
@@ -78,13 +78,13 @@ include "top.inc2.php";
                 </p>
             </div>
             <img data-aos="fade-up" data-aos-duration="3000" class="story-img2" data-aos-delay="700"
-                src="/img/img005.jpg" alt="">
+                src="./images/img005.jpg" alt="">
         </div>
         <!-- 第二頁"中期"內容結束 -->
 
         <!-- 第三頁"插曲"內容 -->
         <div class="story3" id="section3">
-            <img data-aos="fade-up" data-aos-duration="3000" class="story-img3" src="/img/img008.jpg" alt="">
+            <img data-aos="fade-up" data-aos-duration="3000" class="story-img3" src="./images/img008.jpg" alt="">
             <div data-aos="fade-up" data-aos-duration="3000" class="story-body">
                 <h1 class="story-title">轉型成功 </h1>
                 <hr>
@@ -108,7 +108,7 @@ include "top.inc2.php";
         <!-- TODO:內容重新更改或是維持原樣 -->
         <div class="story4">
 
-            <img data-aos="fade-up" data-aos-duration="3000" class="story-img4" src="/img/文宏照片(舊照)1F_210603_0.png"
+            <img data-aos="fade-up" data-aos-duration="3000" class="story-img4" src="./images/文宏照片(舊照)1F_210603_0.png"
                 alt="">
             <div data-aos="fade-up" data-aos-duration="3000" class="story-body">
                 <h1 class="story-title">持續經營 </h1>
@@ -130,7 +130,7 @@ include "top.inc2.php";
                     開張了新店面之後，生意趨向逐漸穩定，而老闆蕭魏嵩也很高興能夠有這樣成功的轉變，也希望之後的生意能夠越來越好，他認為"人就是應該要努力打拼"去追求自己夢想的一切"。
                 </p>
             </div>
-            <img data-aos="fade-up" data-aos-duration="3000" class="story-img5" src="/img/1F_2F 新店內擺設_210613.png"
+            <img data-aos="fade-up" data-aos-duration="3000" class="story-img5" src="./images/1F_2F 新店內擺設_210613.png"
                 alt="">
         </div>
 
@@ -146,16 +146,16 @@ include "top.inc2.php";
                 data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="/img/祝融慘害_210603_0改.png" class="d-block w-100 rounded-3" alt="">
+                        <img src="./images/祝融慘害_210603_0改.png" class="d-block w-100 rounded-3" alt="">
                     </div>
                     <div class="carousel-item">
-                        <img src="/img/祝融慘害_210613.png" class="d-block w-100 rounded-3" alt="">
+                        <img src="./images/祝融慘害_210613.png" class="d-block w-100 rounded-3" alt="">
                     </div>
                     <div class="carousel-item">
-                        <img src="/img/祝融慘害_210603_4.png" class="d-block w-100 rounded-3" alt="">
+                        <img src="./images/祝融慘害_210603_4.png" class="d-block w-100 rounded-3" alt="">
                     </div>
                     <div class="carousel-item">
-                        <img src="/img/4752071.png" class="d-block w-100 rounded-3" alt="">
+                        <img src="./images/4752071.png" class="d-block w-100 rounded-3" alt="">
                     </div>
                 </div>
             </div>
@@ -180,7 +180,7 @@ include "top.inc2.php";
         </div>
         <div class="story4" id="section4">
 
-            <img data-aos="fade-up" data-aos-duration="3000" class="story-img4" src="/img/20140622003513.png" alt="">
+            <img data-aos="fade-up" data-aos-duration="3000" class="story-img4" src="./images/20140622003513.png" alt="">
             <div data-aos="fade-up" data-aos-duration="3000" class="story-body">
                 <h1 class="story-title">傳承的火炬 </h1>
                 <hr>
@@ -202,7 +202,7 @@ include "top.inc2.php";
                     現在的文宏已不是當時的文宏行，卻仍存在他們的心中，蕭老先生也已年邁九十，可是內心的夢依然遠大，他很期盼總有一天後面的子孫可以將文宏推得更遠，推向世界!
                 </p>
             </div>
-            <img data-aos="fade-up" data-aos-duration="3000" class="story-img5" src="/img/S__31883285.png" alt="">
+            <img data-aos="fade-up" data-aos-duration="3000" class="story-img5" src="./images/S__31883285.png" alt="">
         </div>
         <!-- 第一頁"起始"內容 -->
         <!-- <div class="story">
