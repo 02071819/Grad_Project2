@@ -1,0 +1,85 @@
+.product-img{
+    position: absolute;
+    width: 150px;
+    left: calc(50% - 75px);
+    top: 3%;
+}
+.slide-product{
+    display: none;
+}
+.slideshow-container{
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+.slide-product1, .slide-product2, .slide-product3{
+    height: 200px;
+}
+.slide-product1{
+    background-color: #1e71b8;
+    box-shadow: 3px 3px 8px 4px rgba(0, 0, 0, 0.4);
+}
+.slide-product2{
+    background-color: #ff4b0c;
+    box-shadow: 3px 3px 8px 4px rgba(0, 0, 0, 0.4);
+}
+.slide-product3{
+    background-color: #000;
+    box-shadow: 3px 3px 8px 4px rgba(0, 0, 0, 0.4);
+}
+.slide-product-container{
+    position: relative;
+    display: flex;
+    top: -35px;
+    background-color: #fff;
+    box-shadow: 3px 3px 8px 4px rgba(0, 0, 0, 0.4);
+    margin: auto;
+    width: 80%;
+    height: 600px;
+}
+.slide-product-prev, .slide-product-next{
+    cursor: pointer;
+    position: absolute;
+    top: 10%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+    user-select: none;
+    left: calc(50% - 140px);
+}
+.slide-product-next{
+    left: calc(50% + 102px);
+}
+.slide-product-prev:hover, .slide-product-next:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.slider-fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.5s;
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+@-webkit-keyframes fade{
+    from{opacity: 0.4}
+    to{opacity: 1}
+}
+@keyframes fade{
+    from{opacity: 0.4}
+    to{opacity: 1}
+}
+
+@media only screen and (max-width:300px){
+    .slide-product-prev, .slide-product-next{
+        font-size: 11px;
+    }
+}
+@media only screen and (max-width:500px){
+    .slide-product-prev, .slide-product-next{
+        font-size: 14px;
+    }
+}
