@@ -5,7 +5,7 @@ include("top.inc.php");
 include("left.inc.php");
 include("footer.inc.php");
 
-//select DB categories的資料
+//針對id做select DB categories的資料
 if (isset($_GET['id']) && $_GET['id'] != '') {
     $id = mysqli_real_escape_string($conn, $_GET['id']);
     $display = mysqli_query($conn, "select * from categories where id = '$id'");

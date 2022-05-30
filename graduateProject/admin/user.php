@@ -6,37 +6,38 @@ include("footer.inc.php");
 //針對該id做delete動作
 if(isset($_GET['id']) && $_GET['id']!='') {
     $id = mysqli_real_escape_string($conn,$_GET['id']);
-    $delete = mysqli_query($conn, "DELETE FROM `categories` WHERE id = '$id'");
+    $delete = mysqli_query($conn, "DELETE FROM `user_registration` WHERE id = '$user_id'");
 }
 ?>
 
 <div class="rightDiv">
     <div class="headTitle">
-        <h2>Categories Page 商品品牌種類</h2>
-        <a href="manage_categories.php">Add Categories 新增品牌</a>
+        <h2>User Page 會員帳號頁面</h2>
     </div>
     <div class="view">
         <table width="100%" border="1px" cellpadding="0" cellspacing="0">
             <tr>
                 <th>S1 No</th>
-                <th>品牌種類名稱</th>
-                <th>操作</th>
+                <th>會員名稱</th>
+                <th>會員ID</th>
+                <th>會員Email</th>
+                <th>會員聯絡號碼</th>
+                <th>會員密碼</th>
+
             </tr>
             <?php
-                $display = mysqli_query($conn,"select * from categories");
+                $display = mysqli_query($conn,"select * from user_registration");
                 
                 $i=1;
-                while($data = mysqli_fetch_assoc($display))//關聯數組
-                {
+                while($data = mysqli_fetch_assoc($display)){
                     echo "
                     <tr>
                         <td>".$i++."</td>
-                        <td>".$data['catname']."</td>
-                        <td>
-                            <a href='?id=".$data['id']."'>Delete</a> &nbsp;
-                                &nbsp;
-                            <a href='manage_categories.php?id=".$data['id']."'>Edit</a>
-                        </td>
+                        <td>".$data['uname']."</td>
+                        <td>".$data['user_id']."</td>
+                        <td>".$data['email']."</td>
+                        <td>".$data['mnumber']."</td>
+                        <td>".$data['password']."</td>
                     </tr>
                     ";
                 }

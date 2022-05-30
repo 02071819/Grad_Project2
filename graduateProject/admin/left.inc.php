@@ -7,7 +7,7 @@
                     <span class="icon">
                         <ion-icon name="storefront-outline"></ion-icon>
                     </span>
-                    <span class="title">WINHORN Dashboard</span>
+                    <span class="title">WINHORN 後台儀表板</span>
                 </a>
             </div>
 
@@ -15,7 +15,7 @@
                     <span class="icon">
                         <ion-icon name="laptop-outline"></ion-icon>
                     </span>
-                    <span class="title">Category Manage</span>
+                    <span class="title">Category 商品品牌管理</span>
 
                 </a>
             </li>
@@ -23,7 +23,7 @@
                     <span class="icon">
                         <ion-icon name="calendar-clear-outline"></ion-icon>
                     </span>
-                    <span class="title">subcategory Manage</span>
+                    <span class="title">subcategory 商品部件管理</span>
 
                 </a>
             </li>
@@ -31,24 +31,24 @@
                     <span class="icon">
                         <ion-icon name="easel-outline"></ion-icon>
                     </span>
-                    <span class="title">Product Manage</span>
+                    <span class="title">Product 商品管理</span>
 
                 </a>
             </li>
 
-            <li><a href="#">
+            <li><a href="user.php">
                     <span class="icon">
                         <ion-icon name="people-outline"></ion-icon>
                     </span>
-                    <span class="title">Customer</span>
+                    <span class="title">Customer 會員管理</span>
 
                 </a>
             </li>
-            <li><a href="#">
+            <li><a href="order_checkout.php">
                     <span class="icon">
-                        <ion-icon name="bar-chart-outline"></ion-icon>
+                        <ion-icon name="bag-check-outline"></ion-icon>
                     </span>
-                    <span class="title">Rank</span>
+                    <span class="title">Order 結帳訂單管理</span>
 
                 </a>
             </li>

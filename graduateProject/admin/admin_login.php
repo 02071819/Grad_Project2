@@ -90,9 +90,9 @@ if(isset($_POST['submit'])){
 <div class="container">
     <h1>Commerce CMS</h1>
     <form action="" method="post" class="loginForm">
-        <input type="text" name="uname" placeholder="Username" class="data" required>
-        <input type="password" name="pswd" placeholder="Password" class="data" required>
-        <input type="submit" name="submit" value="Login" class="btn">
+        <input type="text" name="uname" placeholder="使用者名稱" class="data" required>
+        <input type="password" name="pswd" placeholder="密碼" class="data" required>
+        <input type="submit" name="submit" value="登入" class="btn">
         <div class="msg"><?php echo $msg; ?></div>
     </form>
 </div>

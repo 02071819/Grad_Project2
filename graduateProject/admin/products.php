@@ -32,16 +32,16 @@ if(isset($_GET['id']) && $_GET['id']!='') {
 
 <div class="rightDiv">
     <div class="headTitle">
-        <h2>Products Page</h2>
-        <a href="manage_products.php">Add Products</a>
+        <h2>Products Page 商品</h2>
+        <a href="manage_products.php">Add Products 新增產品</a>
     </div>
     <div class="view">
         <table width="100%" border="1px" cellpadding="0" cellspacing="0">
             <tr>
                 <th>S1 No</th>
-                <th>Product Name</th>
-                <th>Action</th>
-                <th>Status</th>
+                <th>商品名稱</th>
+                <th>操作</th>
+                <th>上架狀態</th>
             </tr>
             <?php
                 $display = mysqli_query($conn,"select * from products");
@@ -61,9 +61,9 @@ if(isset($_GET['id']) && $_GET['id']!='') {
                         <td>"; ?>
                         <?php
                             if($data['status']==1){
-                               echo"<a href='?type=status&operation=deactive&s_id=".$data['id']."'>Active</a>"; 
+                               echo"<a href='?type=status&operation=deactive&s_id=".$data['id']."'>上架Active</a>"; 
                             }else{
-                                echo"<a href='?type=status&operation=active&s_id=".$data['id']."'>Deactive</a>"; 
+                                echo"<a href='?type=status&operation=active&s_id=".$data['id']."'>下架Deactive</a>"; 
                             }                          
                         echo "</td>
                     </tr>

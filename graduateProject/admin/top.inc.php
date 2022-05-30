@@ -25,7 +25,7 @@ if ($uname) {
 
 <body>
     <header>
-        <p>Username : <?php echo $uname; ?></p>
+        <p>管理者名稱 : <?php echo $uname; ?></p>
         <a href="logout.php">Logout</a>
     </header>
 </body>

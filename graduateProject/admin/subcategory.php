@@ -12,15 +12,15 @@ if(isset($_GET['id']) && $_GET['id']!='') {
 
 <div class="rightDiv">
     <div class="headTitle">
-        <h2>SubCategories Page</h2>
-        <a href="manage_subcategories.php">Add SubCategories</a>
+        <h2>SubCategories Page 商品品牌部件種類</h2>
+        <a href="manage_subcategories.php">Add SubCategories 新增種類</a>
     </div>
     <div class="view">
         <table width="100%" border="1px" cellpadding="0" cellspacing="0">
             <tr>
                 <th>S1 No</th>
-                <th>SubCategory Name</th>
-                <th>operations</th>
+                <th>品牌部件名稱</th>
+                <th>操作</th>
             </tr>
             <?php
                 $display = mysqli_query($conn,"select * from subcategories");
