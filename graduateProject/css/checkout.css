@@ -1,0 +1,59 @@
+.order_info{
+    display: flex;
+}
+.cartorder_info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+}
+.titleText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titleText h1{
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 5px;
+}
+.cart-info{
+    padding-left: 10%;
+    margin: 3% 3%;
+    display: flex;
+    width: 500px;
+}
+.total_price{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 14%;
+    margin-bottom: 5%;
+}
+.total_price table{
+    border-top: 3px solid #737CA1;
+    width: 100%;
+    max-width: 350px;
+}
+.box{
+    padding-left: 10%;
+}
+.pay_choice{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 1rem;
+}
+.orderconfirm_btn{
+    max-width: 200px;
+    background: #737CA1;
+    border-radius: 10px;
+    border: 0;
+    font-size: 1em;
+    outline: none;
+    color: #fff;
+    padding: 10px 30px;
+    margin-left: 10px; 
+    cursor: pointer;
+}
+.order_form{
+    width: 150px;
+}

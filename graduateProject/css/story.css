@@ -1,9 +1,12 @@
-/* *{
-    border: 1px solid black;
-} */
+*{
+    font-size: 100%;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans TC', sans-serif;
+}
 
 body {
-	font-family: 'Noto Sans TC', sans-serif;
 	background-color: rgb(252, 250, 236);
 }
 hr {
@@ -14,142 +17,6 @@ hr {
 html {
 	scroll-behavior: smooth;
 }
-/* header */
-.page-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 8px 4%; 
-    position: fixed;
-    z-index: 1000;
-    top: 0px;
-    background-color:  rgba(255, 255, 255);
-    box-shadow: 0px 1px 15px rgb(104, 104, 104);
-}
-a{
-    text-decoration: none;
-}
-.logo-link{
-    display: block;
-  padding: 11px 0;
-}
-img{
-    max-width: 100%;
-}
-.logo{
-    width: 80px;
-}
-/* nav */
-.nav{
-padding-left: 95px;
-}
-.nav-list{
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-.nav-item{
-    list-style: none;
-}
-.nav-link{
-    display: block;
-    font-size: 1.12rem;
-    color: black;
-    /* border: 1px solid black; */
-    padding: 1rem 1rem;
-}
-/* sublist */
-.sublist-container{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    width: 100%;
-    height: 250px;
-    background-color: rgb(255, 255, 255);
-    top:70px;
-    left: 0;
-    box-shadow: 0px 4px 8px -8px rgb(75, 74, 74);
-    transform-origin: top center;
-    transform: scaleY(0);
-    transition: all .1s ease-out;
-}
-.sublist-container2{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    width: 100%;
-    height: 400px;
-    background-color: rgb(255, 255, 255);
-    top:70px;
-    left: 0;
-    box-shadow: 0px 4px 8px -4px rgb(75, 74, 74);
-    transform-origin: top center;
-    transform: scaleY(0);
-    transition: all .1s ease-out;
-}
-.sub-list{
-    display: flex;
-    margin:0;
-    padding: 0;
-}
-.sub-item{
-    list-style: none;
-}
-.sub-link{
-    display: block;
-    font-size: 1.1rem;
-    color: black;
-    padding: 5px 10px;
-    margin: 0 20px;
-    /* border: black solid 1px; */
-}
-.nav-item:hover .sublist-container{
-    display: flex;
-    transform: scaleY(1);
-}
-.nav-item:hover .sublist-container2{
-    transform: scaleY(1);
-    display: flex;
-}
-/* subsublist */
-.subsub-item{
-    list-style: none;
-    
-}
-.subsub-link{
-    display: block;
-    font-size: 1.1em;
-    color: rgb(100, 100, 100);
-    /* border: 1px solid black; */
-    margin-top: 8px;
-}
-/* header-btn */
-.header-btn{
-    display: flex;
-    /* border: black 1px solid; */
-    justify-content: center;
-    align-items: center;
-}
-.header-btn-link{
-    display: block;
-    font-size: 1.2em;
-    color: black;
-    /* border: black 1px solid; */
-    margin-left: 15px;
-}
-.search-box{
-    width: 100px;
-    height: 25px;
-    background-color: rgb(216, 216, 216);
-    border-radius: 5px;
-    transform-origin: left center;
-    /* transform: scaleX(0); */
-}
-.search-box-active{
-    transform: scaleX(1);
-}
-/* header-end */
 
 .image1 {
 	width: 100px;
@@ -196,17 +63,11 @@ padding-left: 95px;
 	text-decoration: none;
 }
 /*======================== 第一頁內容設定===================== */
-
 .story {
 	/* 設定story區塊寬度，區塊(包含文字和圖片)占總螢幕的大小*/
-	width: 70%;
+	width:100%;
 	margin: 0 auto;
-	/*區塊(圖片+文字)影子 */
-	/* box-shadow: 0px 5px 8px rgb(29, 29, 29) ; */
-	/* box-shadow: 3px 3px 12px gray; */
-}
-.story-title {
-	color: rgb(231, 162, 106)
+    position: relative;
 }
 .story-list {
 	margin-top: 100px;
@@ -217,32 +78,64 @@ padding-left: 95px;
 	margin: auto auto;
 	padding: 30px 30px;
 }
-
-.story-img {
-	width: 100%;
-	box-shadow: 3px 3px 12px gray;
-}
 .story-text{
     letter-spacing: 1px;
     line-height: 1.7;
     color: rgb(0, 0, 0);
 }
-.ok{
+.story-body1 {
+	width:55%;
+	margin: auto auto;
+	padding: 30px 30px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(249, 187, 95, 0.5);
+}
+.story-imgbox{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/img006.jpg);
+    background-size: contain;
+    background-position: center center;
+}
+.story-img{
 	width: 100%;
-	margin: 0 auto;
-	
+	box-shadow: 3px 3px 12px gray;
+}
+.story-content{
+    width: 65%;
+    margin: 35px auto;
+}
+.story-title1 {
+	color: white;
+    font-size: 3rem;
+}
+.story-text1{
+    letter-spacing: 1px;
+    line-height: 1.7;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    padding-top: 85px;
 }
 /*======================== 第二頁內容設定===================== */
 
 .story2 {
 	/* 設定story2區塊寬度，區塊(包含文字和圖片)占總螢幕的大小*/
 	width: 80%;
-	margin: 0 auto;
+	margin: 0px auto;
+    margin-top: 200px;
 	display: flex;
+}
+.story-body2{
+	width: 33%;
+	margin: auto auto;
+	padding: 30px 30px;
 }
 .story-img2 {
 	/* 調整圖片在區塊內的大小，但一樣會維持總螢幕的80% */
-	width: 50%;
+	width: 55%;
 	box-shadow: 3px 3px 12px gray;
 	/* height: 100vh; */
 }
@@ -255,18 +148,22 @@ padding-left: 95px;
 	/* 設定story3區塊寬度，區塊(包含文字和圖片)占總螢幕的大小*/
 	width: 80%;
 	margin: 0 auto;
+    margin-top: 70px;
 	display: flex;
 }
 .story-body3 {
-	width: 30%;
+	width: 33%;
 	margin: auto auto;
 	padding: 30px 30px;
 }
 .story-img3 {
 	/* 調整圖片在區塊內的大小，但一樣會維持總螢幕的80% */
-	width: 50%;
+	width: 55%;
 	/* height: 100vh; */
 	box-shadow: 3px 3px 12px gray;
+}
+.story-title3 {
+	color: rgb(192, 101, 41);
 }
 /*======================== 第四頁內容設定===================== */
 
@@ -279,9 +176,17 @@ padding-left: 95px;
 }
 .story-img4 {
 	/* 調整圖片在區塊內的大小，但一樣會維持總螢幕的80% */
-	width: 50%;
+	width: 55%;
 	box-shadow: 3px 3px 12px gray;
 	/* height: 100vh; */
+}
+.story-body4 {
+	width: 33%;
+	margin: auto auto;
+	padding: 30px 30px;
+}
+.story-title4 {
+	color: rgb(192, 101, 41);
 }
 /*======================== division內容設定===================== */
 
@@ -307,93 +212,110 @@ padding-left: 95px;
 	width: 80%;
 	margin: 0 auto;
 	display: flex;
+    margin-top: 70px;
 }
 .story-body5 {
-	width: 30%;
+	width: 33%;
 	margin: auto auto;
 	padding: 30px 30px;
 }
 .story-img5 {
 	/* 調整圖片在區塊內的大小，但一樣會維持總螢幕的80% */
-	width: 50%;
+	width: 55%;
 	/* height: 100vh; */
 	box-shadow: 3px 3px 12px gray;
 }
-
-.story-img-c{
+.story-title5 {
+	color: rgb(192, 101, 41);
+}
+/*======================== 第六頁內容設定===================== */
+.story6 {
+	/* 設定story3區塊寬度，區塊(包含文字和圖片)占總螢幕的大小*/
 	width: 80%;
+	margin: 0 auto;
+	display: flex;
+    margin-top: 70px;
+}
+.story-body6 {
+	width: 33%;
+	margin: auto auto;
+	padding: 30px 30px;
+}
+.story-img6 {
+	/* 調整圖片在區塊內的大小，但一樣會維持總螢幕的80% */
+	width: 55%;
+	/* height: 100vh; */
+	box-shadow: 3px 3px 12px gray;
+}
+.story-title6 {
+	color: rgb(192, 101, 41);
+}
+/*======================== 第七頁內容設定===================== */
+.story7{
+	/* 設定story3區塊寬度，區塊(包含文字和圖片)占總螢幕的大小*/
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+    margin-top: 70px;
+}
+.story-body7 {
+	width: 33%;
+	margin: auto auto;
+	padding: 30px 30px;
+}
+.story-img7 {
+	/* 調整圖片在區塊內的大小，但一樣會維持總螢幕的80% */
+	width: 55%;
+	/* height: 100vh; */
+	box-shadow: 3px 3px 12px gray;
+}
+.story-title7{
+	color: rgb(192, 101, 41);
+}
+/*======================== 第八頁內容設定===================== */
+.story8{
+	/* 設定story3區塊寬度，區塊(包含文字和圖片)占總螢幕的大小*/
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+    margin-top: 70px;
+	padding-bottom: 70px;
+}
+.story-body8 {
+	width: 33%;
+	margin: auto auto;
+	padding: 30px 30px;
+}
+.story-img8 {
+	/* 調整圖片在區塊內的大小，但一樣會維持總螢幕的80% */
+	width: 55%;
+	/* height: 100vh; */
+	box-shadow: 3px 3px 12px gray;
+}
+.story-title8 {
+	color: rgb(192, 101, 41);
+}
+/* slider */
+.slider{
+    width: 50%;
 	margin: 0 auto;
 	box-shadow: 3px 3px 12px gray;
 }
-.footer{
-    width: 100%;
-    /* height: 250px; */
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 1.01rem;
-    font-weight:bold;
-    background-color: #737CA1;
-    /* background-color: rgb(49, 48, 48); */
+.slider-img-1{
+    background-image: url(../images/祝融慘害_210603_0改.png);
+    background-size:cover ;
+    height: 500px;
 }
-.text-style{
-    margin-bottom: 1rem;
-    color:#ffffff;
-    font-size: 1.1em;
+.slider-img-2{
+    background-image: url(../images/祝融慘害_210613.png);
+    background-size:cover ;
+    height: 500px;
 }
-.footer p:hover{
-    color: rgb(45, 45, 255);
-    color: rgb(15, 15, 15);
+.slider-img-3{
+    background-image: url(../images/祝融慘害_210603_4.png);
+    background-size:cover ;
+    height: 500px;
 }
-.qrcord-area{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 10%;
-    padding: 0;
-}
-.qrcord-png{
-    display: block;
-    width: 100%;
-}
-
-
-
-
-
-/*======================== carousel內容設定===================== */
-.carousel-fade .carousel-inner .item {
-    transition-property: opacity;
-}
-.carousel-fade .carousel-inner .item,
-
-.carousel-fade .carousel-inner .active.left,
-
-.carousel-fade .carousel-inner .active.right {
-   opacity: 0;
-}
-.carousel-fade .carousel-inner .active,
-
-.carousel-fade .carousel-inner .next.left,
-
-.carousel-fade .carousel-inner .prev.right {
-    opacity: 1;
-}
-.carousel-fade .carousel-inner .next,
-
-.carousel-fade .carousel-inner .prev,
-
-.carousel-fade .carousel-inner .active.left,
-
-.carousel-fade .carousel-inner .active.right {
-    left: 0;
-    transform: translate3d(0, 0, 0);
-}
-.carousel-fade .carousel-control {
-    z-index: 2;
-}
-
-.animate__animated.animate__bounceInDown {
-	--animate-duration: 1.5s;
-  }
 
 /*!
  * Load Awesome v1.1.0 (http://github.danielcardoso.net/load-awesome/)

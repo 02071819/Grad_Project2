@@ -1,0 +1,14 @@
+.title{
+    padding-top: 130px;
+    padding-left: 150px;
+    position: relative;
+    top: 20px;
+}
+.title-text{
+    display: inline-block;
+    text-align: center;
+    color: #EF9A1B;
+}
+h1, h2{
+    font-size: 3rem;
+}
