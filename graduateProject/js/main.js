@@ -1,9 +1,9 @@
-function search(){
-    let search = document.querySelector('.search-icon');
-    let searchForm = document.querySelector('.search-form');
-    search.classList.toggle('active');
-    searchForm.classList.toggle('active');
-}
+// function search(){
+//     let search = document.querySelector('.search-icon');
+//     let searchForm = document.querySelector('.search-form');
+//     search.classList.toggle('active');
+//     searchForm.classList.toggle('active');
+// }
 
 function lForm(){
     let toggleForm = document.querySelector('.toggleForm');
@@ -21,9 +21,6 @@ function rFormClose(){
     let rtoggleForm = document.querySelector('.rtoggleForm');
     rtoggleForm.style.top="-100%";
 }
-
-
-
 
 
 
@@ -57,8 +54,8 @@ $(".iconset").click(function () {
 // $(".box").click(function () {
 //     $(".text").addClass("text1");
 // })
-new fullpage('#fullpage', {
-    //options here
-    autoScrolling: true,
-    scrollHorizontally: true
-});
+// new fullpage('#fullpage', {
+//     //options here
+//     autoScrolling: true,
+//     scrollHorizontally: true
+// });
