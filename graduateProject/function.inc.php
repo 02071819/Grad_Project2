@@ -26,6 +26,28 @@ function get_product($conn, $limit = '', $cat_id = '', $subcat_id = '', $pro_id 
 }
 // select products DB的所有資料
 
+function get_usercart($conn, $cartpro_id= '', $qty = '')
+{
+    $cart_sql = "select * from user_cart ";
+    
+    if ($cartpro_id != '') {
+        $cart_sql .= " and pid=$cartpro_id";
+    }
+    if ($qty != '') {
+        $cart_sql .= " and qty=$qty";
+    }
+
+    // $cart_sql .= " order by id desc";
+    
+    $res = mysqli_query($conn, $cart_sql);
+    $cartdata = array();
+    while ($row = mysqli_fetch_assoc($res)) {
+        $cartdata[] = $row;
+    }
+    return $cartdata;
+}
+// select usercart DB的所有資料
+
 
 function getIP()
 {
@@ -38,5 +60,3 @@ function getIP()
     }
     return $ip;
 }
-
-?>

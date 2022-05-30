@@ -5,369 +5,210 @@ include "top.inc2.php";
 ?>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/product-slider-style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文宏運動用品店</title>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet">
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- this page's exclusive css -->
+    <link rel="stylesheet" href="./css/homepage.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/sitemap.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
-
 <body>
-    <!-- header end -->
-    <div class="banner_slider">
-        <div><img src="./images/商品服務1.jfif" alt=""></div>
-        <div><img src="./images/商品服務照4.jfif" alt=""></div>
-        <div><img src="./images/商品服務照5.jfif" alt=""></div>
-    </div>
-    <div class="home-page-container">
-        <h2 class="page-title">文宏運動用品</h2>
-        <div class="home-page-intro">
-            <p>在員林服務超過五十年的運動用品店<br>我們用心提供值得信賴的品牌及服務 !</p>
-            <!-- <a class="home-page-button" href="">了解更多</a> -->
-        </div>
-        <div class="home-page-container2">
-            <ul class="box-area">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-        <div class="page-title2">
-            <h2>關於文宏運動用品</h2>
-            <p>員林歷史最悠久的文宏運動用品店，我們用心提供值得信賴的品牌及服務!<br>
-                公司主要的營業項目是經銷全世界知名的運動品牌。<br>堅持好品質致力於追求活力與健康，
-                提供所有熱愛戶外運動探索生命的人們最全面的運動用品。</p>
-        </div>
-    </div>
-    <!--home-container -->
 
-    <div class="news-container">
-        <h1>最新消息</h1>
-        <div class="news-slider" data-aos="flip-up" data-aos-duraiton="5000" data-aos-delay="100">
-            <div class="sliders">
-                <!-- radio button  -->
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
-                <!-- slide img -->
-                <div class="slide first">
-                    <img src="./images/sports pt1.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="./images/sports pt2.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="./images/sports pt3.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="./images/sports pt4.jpg" alt="">
-                </div>
-                <!-- automatic navigation -->
-                <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
-                </div>
+    <!-- 第一部分 -->
+    <article class="part1">
+        <section class="part1-img">
+            <img src="./images/whhompagelogo.png" alt="">
+        </section>
+        <section class="part1-btn">
+            <a href="#partfour">了解更多</a>
+        </section>
+    </article>
+    <!-- 第一部分END -->
+
+    <!-- 第二部分 -->
+    <div class="part2 container">
+        <div class="brand row">
+            <div class="br-container col-md-2 col-sm-4 col-4">
+                <img src="./images/nike logo.png" alt="">
             </div>
-
-            <!-- manual navigation -->
-            <div class="navigation-manual">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-                <label for="radio4" class="manual-btn"></label>
+            <div class="br-container col-md-2 col-sm-4 col-4">
+                <img src="./images/adidas logo.png" alt="">
             </div>
-
-            <script class="news-slide" type="text/javascript">
-                var counter = 1;
-                setInterval(function() {
-                    document.getElementById('radio' + counter).checked = true;
-                    counter++;
-                    if (counter > 4) {
-                        counter = 1;
-                    }
-                }, 5000);
-            </script>
+            <div class="br-container col-md-2 col-sm-4 col-4">
+                <img src="./images/mizuno logo.png" alt="">
+            </div>
+            <div class="br-container col-md-2 col-sm-4 col-4">
+                <img src="./images/lotto logo.jpg" alt="">
+            </div>
+            <div class="br-container col-md-2 col-sm-4 col-4">
+                <img src="./images/keds logo.png" alt="">
+            </div>
+            <div class="br-container col-md-2 col-sm-4 col-4">
+                <img src="./images/sketchers logo.png" alt="">
+            </div>
         </div>
     </div>
-    <div class="space"></div>
+    <!-- 第二部分END -->
 
-    <div class="brand">
-        <div class="br-container">
-            <img src="./images/nike logo.png" alt="">
-        </div>
-        <div class="br-container">
-            <img src="./images/adidas logo.png" alt="">
-        </div>
-        <div class="br-container">
-            <img src="./images/mizuno logo.png" alt="">
-        </div>
-        <div class="br-container">
-            <img src="./images/lotto logo.jpg" alt="">
-        </div>
-        <div class="br-container">
-            <img src="./images/keds logo.png" alt="">
-        </div>
-
-    </div>
-    <div class="space"></div>
-
-    <div class="new-product">
-        <div class="slideshow-container">
-            <div class="slide-product slider-fade">
-                <!-- <div class="nembertext">1/3</div> -->
-                <div class="slide-product1">
-                    <img class="product-img" src="./images/adidas white.png" alt="">
-                </div>
-                <div class="slide-product-container slider-fade">
-                    <div data-aos="zoom-in" data-aos-duraiton="5000" data-aos-delay="200" class="Item">
-                        <img src="./images/shoe1.jpg" alt="">
-                        <div class="item-info">
-                            <h1>Heading</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi assumenda doloribus beatae
-                                rerum laborum id quod eum ipsam adipisci porro a, dolor amet facere quam est?
-                                Consequuntur, aperiam! Numquam, sequi?</p>
-                            <a href="#" class="item-btn">Read More</a>
-                        </div>
+    <!-- 第三部分 -->
+    <div class="part3">
+        <div class="container">
+            <h1>最新消息</h1>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/sports pt2.jpg" class="d-block w-100 ">
                     </div>
-                    <div data-aos="zoom-in" data-aos-duraiton="5000" data-aos-delay="200" class="Item">
-                        <img src="./images/shoe2.jpg" alt="">
-                        <div class="item-info">
-                            <h1>Heading</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi assumenda doloribus beatae
-                                rerum laborum id quod eum ipsam adipisci porro a, dolor amet facere quam est?
-                                Consequuntur, aperiam! Numquam, sequi?</p>
-                            <a href="#" class="item-btn">Read More</a>
-                        </div>
+                    <div class="swiper-slide">
+                        <img src="./images/sports pt3.jpg" class="d-block w-100 ">
                     </div>
-                    <div data-aos="zoom-in" data-aos-duraiton="5000" data-aos-delay="200" class="Item">
-                        <img src="./images/shoe3.jpg" alt="">
-                        <div class="item-info">
-                            <h1>Heading</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi assumenda doloribus beatae
-                                rerum laborum id quod eum ipsam adipisci porro a, dolor amet facere quam est?
-                                Consequuntur, aperiam! Numquam, sequi?</p>
-                            <a href="#" class="item-btn">Read More</a>
-                        </div>
+                    <div class="swiper-slide">
+                        <img src="./images/sports pt4.jpg" class="d-block w-100 ">
                     </div>
                 </div>
-                <div class="product-readmore">
-                    <button class="btn readmore-btn1">查看更多</button>
-                </div>
-                <!-- <div class="slide-product-text">Caption text</div> -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
-            <div class="slide-product slider-fade">
-                <!-- <div class="nembertext">2/3</div> -->
-                <div class="slide-product2">
-                    <img class="product-img" src="./images/nike white.png" alt="" style="top:4%">
-                </div>
-                <div class="slide-product-container slider-fade">
-                    <div data-aos="zoom-in" data-aos-duraiton="5000" data-aos-delay="200" class="Item">
-                        <img src="./images/shoe1.jpg" alt="">
-                        <div class="item-info">
-                            <h1>Heading</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi assumenda doloribus beatae
-                                rerum laborum id quod eum ipsam adipisci porro a, dolor amet facere quam est?
-                                Consequuntur, aperiam! Numquam, sequi?</p>
-                            <a href="#" class="item-btn">Read More</a>
-                        </div>
-                    </div>
-                    <div data-aos="zoom-in" data-aos-duraiton="5000" data-aos-delay="200" class="Item">
-                        <img src="./images/shoe2.jpg" alt="">
-                        <div class="item-info">
-                            <h1>Heading</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi assumenda doloribus beatae
-                                rerum laborum id quod eum ipsam adipisci porro a, dolor amet facere quam est?
-                                Consequuntur, aperiam! Numquam, sequi?</p>
-                            <a href="#" class="item-btn">Read More</a>
-                        </div>
-                    </div>
-                    <div data-aos="zoom-in" data-aos-duraiton="5000" data-aos-delay="200" class="Item">
-                        <img src="./images/shoe3.jpg" alt="">
-                        <div class="item-info">
-                            <h1>Heading</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi assumenda doloribus beatae
-                                rerum laborum id quod eum ipsam adipisci porro a, dolor amet facere quam est?
-                                Consequuntur, aperiam! Numquam, sequi?</p>
-                            <a href="#" class="item-btn">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-readmore">
-                    <button class="btn readmore-btn1">查看更多</button>
-                </div>
-                <!-- <div class="slide-product-text">Caption text</div> -->
-            </div>
-            <div class="slide-product slider-fade">
-                <!-- <div class="nembertext">3/3</div> -->
-                <div class="slide-product3">
-                    <img class="product-img" src="./images/lotto logo white.png" alt="" style="top:4%">
-                </div>
-                <div class="slide-product-container slider-fade">
-                    <div data-aos="zoom-in" data-aos-duraiton="5000" data-aos-delay="200" class="Item">
-                        <img src="./images/shoe1.jpg" alt="">
-                        <div class="item-info">
-                            <h1>Heading</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi assumenda doloribus beatae
-                                rerum laborum id quod eum ipsam adipisci porro a, dolor amet facere quam est?
-                                Consequuntur, aperiam! Numquam, sequi?</p>
-                            <a href="#" class="item-btn">Read More</a>
-                        </div>
-                    </div>
-                    <div data-aos="zoom-in" data-aos-duraiton="5000" data-aos-delay="200" class="Item">
-                        <img src="./images/shoe2.jpg" alt="">
-                        <div class="item-info">
-                            <h1>Heading</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi assumenda doloribus beatae
-                                rerum laborum id quod eum ipsam adipisci porro a, dolor amet facere quam est?
-                                Consequuntur, aperiam! Numquam, sequi?</p>
-                            <a href="#" class="item-btn">Read More</a>
-                        </div>
-                    </div>
-                    <div data-aos="zoom-in" data-aos-duraiton="5000" data-aos-delay="200" class="Item">
-                        <img src="./images/shoe3.jpg" alt="">
-                        <div class="item-info">
-                            <h1>Heading</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi assumenda doloribus beatae
-                                rerum laborum id quod eum ipsam adipisci porro a, dolor amet facere quam est?
-                                Consequuntur, aperiam! Numquam, sequi?</p>
-                            <a href="#" class="item-btn">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-readmore">
-                    <button class="btn readmore-btn1">查看更多</button>
-                </div>
-                <!-- <div class="slide-product-text">Caption text</div> -->
-            </div>
-
-            <a class="slide-product-prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="slide-product-next" onclick="plusSlides(1)">&#10095;</a>
-
-        </div>
-        <div style="text-align: center;">
-            <span class="dot" onclick="currentSlides(1)"></span>
-            <span class="dot" onclick="currentSlides(2)"></span>
-            <span class="dot" onclick="currentSlides(3)"></span>
-            <!-- <span class="dot" onclick="currentSlides(4)"></span> -->
         </div>
     </div>
+    <!-- 第三部分END -->
 
-
-    <div class="space"></div>
-
-    <div class="com-container">
-        <div class="com-img-slider" data-aos="fade-right" data-aos-duraiton="5000" data-aos-delay="200">
-            <a href="">
-                <div class="com-bg">
-                    <!-- <h1>來<br>去<br>逛<br>逛</h1>     -->
+    <!-- 第四部份 -->
+    <section id="partfour" class="part4">
+        <h1>特色服務</h1>
+        <div class="part4-slider container">
+            <div class="slider-con">
+                <div class="slider-part">
+                    <div class="slider-img">
+                        <img src="./images/badminton intro.png" alt="">
+                    </div>
+                    <div class="slider-intro">
+                        <h2>羽毛球專區</h2>
+                        <div class="underline"></div>
+                        <h3>秉持最好的職業精神，用細心和嚴謹地態度以及最高的品質完成一支支的球拍。超過三十年的穿線經驗的老師傅，嫻熟的操作穿線機並用最少的時間給顧客最好的服務。</h3>
+                    </div>
                 </div>
-            </a>
-        </div>
-        <div data-aos="zoom-in" data-aos-duraiton="5000" data-aos-delay="200" class="com-info">
-            <div class="com-info-h">
-                <h1>Shop The Look</h1>
             </div>
-            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="./images/shoe1.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>PG 5 EP</h5>
-                            <p>$3,800</p>
-                            <a href="" class="more-button">了解更多</a>
-                        </div>
+            <div class="slider-con">
+                <div class="slider-part">
+                    <div class="slider-intro">
+                        <h2>棒球專區</h2>
+                        <div class="underline"></div>
+                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis nihil quidem quos,
+                            perspiciatis quaerat asperiores autem quasi nisi magni maiores quas quia maxime illo.
+                            Ducimus laudantium tenetur veniam laborum accusamus.</h3>
                     </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="./images/shoe2.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Zoom Freak 2</h5>
-                            <p>$4,180</p>
-                            <a href="" class="more-button">了解更多</a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/shoe3.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Kyrie 7 EP</h5>
-                            <p>$4,200</p>
-                            <a href="" class="more-button">了解更多</a>
-                        </div>
+                    <div class="slider-img">
+                        <img src="./images/baseball intro.png" alt="">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
+            <div class="slider-con">
+                <div class="slider-part">
+                    <div class="slider-img">
+                        <img src="./images/sports info.png" alt="">
+                    </div>
+                    <div class="slider-intro">
+                        <h2>專業運動</h2>
+                        <div class="underline"></div>
+                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis nihil quidem quos,
+                            perspiciatis quaerat asperiores autem quasi nisi magni maiores quas quia maxime illo.
+                            Ducimus laudantium tenetur veniam laborum accusamus.</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-con">
+                <div class="slider-part">
+                    <div class="slider-intro">
+                        <h2>文宏故事屋</h2>
+                        <div class="underline"></div>
+                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis nihil quidem quos,
+                            perspiciatis quaerat asperiores autem quasi nisi magni maiores quas quia maxime illo.
+                            Ducimus laudantium tenetur veniam laborum accusamus.</h3>
+                    </div>
+                    <div class="slider-img">
+                        <img src="./images/WHstore.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="slider-con">
+                <div class="slider-img">
+                    <img src="../img/example.jpg" alt="">
+                </div>
+                <h3>slider5</h3>
+                <p>slider5 info</p>
+            </div> -->
         </div>
-
-
-        <!-- 商品slider start -->
-
-        <!-- <div class="slide hi-slide">
-            <div class="hi-prev"></div>
-            <div class="hi-next"></div>
-            <ul>
-                <li><img src="/img/com-img2.jpg" alt=""></li>
-                <li><img src="/img/com-img3.jpg" alt=""></li>
-                <li><img src="/img/com-img4.jpg" alt=""></li>
-                <li><img src="/img/com-img5.jpg" alt=""></li>
-                <li><img src="/img/com-img6.jpg" alt=""></li>
-            </ul>
-        </div>
-        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-        <script src="/hislide/jquery.hislide.js"></script>
-        <script>
-            $('.slide').hiSlide();
-        </script> -->
-
-        <!-- 商品slider end -->
-
-    </div>
-
-    <!-- <div class="space"></div> -->
-
-    <div class="space"></div>
+    </section>
+    <!-- 第四部份end -->
 
     <?php
     include "footer.inc.php";
     ?>
 
-    <!-- 加入slick.js 12/9 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script>
-        $('.banner_slider').slick({
-            // dots: true,
-            infinite: true,
-            // speed: 500,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            fade: true,
-            cssEase: 'linear',
-            arrows: false,
-        });
-    </script>
-    <script src="./js/product-slider-script.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="../js/main.js"></script>
+
+    <!-- aos animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+
+    <!-- slick slider-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../js/slick.js"></script>
+    <script src="./js/main.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
     </script>
 </body>

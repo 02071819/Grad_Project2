@@ -4,6 +4,11 @@ include "top.inc.php";
 $pro_id = mysqli_real_escape_string($conn, $_GET['id']);
 // include "function.inc.php";
 ?>
+
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
 <section class="singlePro">
     <div class="row">
         <?php
@@ -21,12 +26,11 @@ $pro_id = mysqli_real_escape_string($conn, $_GET['id']);
                 <br>
                 <form method="post" action="add_cart.php">
                     <input type="number" name="qty" value="1" min="1" max="5">
-                    <input type="submit" name="cart" value="Add Cart" class="cartBtn">
+                    <input type="submit" name="cart" value="加入購物車" class="cartBtn">
                     <p><?php echo $list['short_desc'] ?></p>
                     <p><?php echo $list['long_desc'] ?></p>
 
-                    <input type="hidden" name="pid" value="<?php echo $list['id'] ?>">
-                    
+                    <input type="hidden" name="pid" value="<?php echo $list['id'] ?>">               
                 </form>
             </div>
         <?php } ?>
@@ -36,13 +40,13 @@ $pro_id = mysqli_real_escape_string($conn, $_GET['id']);
 
 <section class="newProducts">
     <div class="titleText">
-        <h1>Related Products</h1>
+        <h1>相關產品</h1>
     </div>
     <div class="Indexrow">
         <div class="itemouter">
             <div class="Indexcol">
                 <div class="imgBx">
-                    <img src="images/shoes_2.jpg">
+                    <img src="images/shoe3.jpg">
                 </div>
             
             </div>
@@ -51,7 +55,7 @@ $pro_id = mysqli_real_escape_string($conn, $_GET['id']);
                      <h3>Product Name</h3>
                         <p> $1000</p>
                 </div>
-                <input type="submit" name="cart" value="Add Cart" class="cartBtn">
+                <input type="submit" name="cart" value="加入購物車" class="cartBtn">
             </div>
         </div>
 
@@ -65,39 +69,39 @@ $pro_id = mysqli_real_escape_string($conn, $_GET['id']);
             <div class="IDLinf">
                 <div class="details">
                      <h3>Product Name</h3>
-                        <p> $1000</p>
+                        <p> $2500</p>
                 </div>
-                <input type="submit" name="cart" value="Add Cart" class="cartBtn">
+                <input type="submit" name="cart" value="加入購物車" class="cartBtn">
             </div>
         </div>
         <div class="itemouter">
             <div class="Indexcol">
                 <div class="imgBx">
-                    <img src="images/shoes_2.jpg">
+                    <img src="images/shoes_1.jpg">
                 </div>
             
             </div>
             <div class="IDLinf">
                 <div class="details">
                      <h3>Product Name</h3>
-                        <p> $1000</p>
+                        <p> $2000</p>
                 </div>
-                <input type="submit" name="cart" value="Add Cart" class="cartBtn">
+                <input type="submit" name="cart" value="加入購物車" class="cartBtn">
             </div>
         </div>
         <div class="itemouter">
             <div class="Indexcol">
                 <div class="imgBx">
-                    <img src="images/shoes_2.jpg">
+                    <img src="images/shoe1.jpg">
                 </div>
             
             </div>
             <div class="IDLinf">
                 <div class="details">
                      <h3>Product Name</h3>
-                        <p> $1000</p>
+                        <p> $1800</p>
                 </div>
-                <input type="submit" name="cart" value="Add Cart" class="cartBtn">
+                <input type="submit" name="cart" value="加入購物車" class="cartBtn">
             </div>
         </div>
 
